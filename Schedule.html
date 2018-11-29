@@ -1,0 +1,2798 @@
+</head>
+<body>
+<select id="turt" onclick="periodChange()" >
+ <option value="0" ></option>
+  <option value="Period 2" >Period 2</option>
+  <option value="Period 3" >Period 3</option>
+  <option value="Period 6" >Period 6</option>
+  <option value="Period 7" >Period 7</option>
+</select>
+<select id="tur" >
+  <option id="stu1" ></option>
+  <option id="stu2" ></option>
+  <option id="stu3" ></option>
+  <option id="stu4" ></option>
+  <option id="stu5" ></option>
+  <option id="stu6" ></option>
+  <option id="stu7" ></option>
+  <option id="stu8" ></option>
+  <option id="stu9" ></option>
+  <option id="stu10" ></option>
+  <option id="stu11" ></option>
+  <option id="stu12" ></option>
+  <option id="stu13" ></option>
+  <option id="stu14" ></option>
+  <option id="stu15" ></option>
+  <option id="stu16" ></option>
+  <option id="stu17" ></option>
+  <option id="stu18" ></option>
+</select>
+<button type="button" id ="hskl" onclick="go()">Go</button>
+<p id="name"> </p>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script>
+var teleport;
+var hi;
+var book1 ;
+var book2  ;
+var book3 ;
+var book4 ;
+var book5;
+var book6 ;
+var book7 ;
+var book8;
+var book9;
+var book10 ;
+var book11;
+var book12;
+var book13;
+var book14;
+var book15;
+var book16;
+var book17;
+var book18;
+var book19;
+var book20;
+var book21;
+var book22;
+var book23;
+var book24;
+var gat;
+var check1 = "";  
+var check2 = ""; 
+var check3 = "";
+var check4 = "";
+var check5 = "";
+var check6 = ""; 
+var check7 = "";
+var check8 = "";
+var check9 = "";
+var check10 = "";
+var check11 = "";
+var check12 = "";
+var check13 = "";
+var check14 = "";
+var check15 = "";
+var check16 = ""; 
+var check17 = "";
+var check18 = "";
+var check19 = "";
+var check20 = "";
+var check21 = "";
+var check22 = "";
+var check23 = "";
+var check24 = "";
+var set;
+function periodChange(){
+ function pCComplete (){
+ var pe = document.getElementById("turt");
+ if (pe !== null){
+var per = document.getElementById("turt").value;
+}
+if ( pe !== null){
+if (per ==="Period 2" ){
+document.getElementById("stu1").value ="Anja B.";
+document.getElementById("stu1").innerHTML ="Anja B. ";
+document.getElementById("stu2").value ="Ashley B.";
+document.getElementById("stu2").innerHTML ="Ashley B.";
+document.getElementById("stu3").value ="Brooklyn B.";
+document.getElementById("stu3").innerHTML ="Brooklyn B.";
+document.getElementById("stu4").value ="Sam B.";
+document.getElementById("stu4").innerHTML ="Sam B.";
+document.getElementById("stu5").value ="Cameron B.";
+document.getElementById("stu5").innerHTML ="Cameron B.";
+document.getElementById("stu6").value ="Alex C.";
+document.getElementById("stu6").innerHTML ="Alex C.";
+document.getElementById("stu7").value ="Anthony C.";
+document.getElementById("stu7").innerHTML ="Anthony C.";
+document.getElementById("stu8").value ="Nathan F.";
+document.getElementById("stu8").innerHTML ="Nathan F.";
+document.getElementById("stu9").value ="Alexa F.";
+document.getElementById("stu9").innerHTML ="Alexa F.";
+document.getElementById("stu10").value ="Andy G.";
+document.getElementById("stu10").innerHTML ="Andy G.";
+document.getElementById("stu11").value ="Emily J.";
+document.getElementById("stu11").innerHTML ="Emily J.";
+document.getElementById("stu12").value ="Kate M.";
+document.getElementById("stu12").innerHTML ="Kate M.";
+document.getElementById("stu13").value ="Gabe M.";
+document.getElementById("stu13").innerHTML ="Gabe M.";
+document.getElementById("stu14").value ="Cora R.";
+document.getElementById("stu14").innerHTML ="Cora R.";
+document.getElementById("stu15").value ="Viki U";
+document.getElementById("stu15").innerHTML ="Viki U.";
+document.getElementById("stu16").value ="Asley V.";
+document.getElementById("stu16").innerHTML ="Ashley V.";
+document.getElementById("stu17").value ="";
+document.getElementById("stu17").innerHTML ="";
+document.getElementById("stu18").value ="";
+document.getElementById("stu18").innerHTML ="";
+
+}
+if (per ==="Period 3" ){
+document.getElementById("stu1").value ="Julia B.";
+document.getElementById("stu1").innerHTML ="Julia B.";
+document.getElementById("stu2").value ="Alyssa B.";
+document.getElementById("stu2").innerHTML ="Alyssa B.";
+document.getElementById("stu3").value ="Camden C.";
+document.getElementById("stu3").innerHTML ="Camden C.";
+document.getElementById("stu4").value ="Max E.";
+document.getElementById("stu4").innerHTML ="Max E.";
+document.getElementById("stu5").value ="Yasmin F.";
+document.getElementById("stu5").innerHTML ="Yasmin F.";
+document.getElementById("stu6").value ="Tyler G.";
+document.getElementById("stu6").innerHTML ="Tyler G.";
+document.getElementById("stu7").value ="Ty G.";
+document.getElementById("stu7").innerHTML ="Ty G.";
+document.getElementById("stu8").value ="Evy H.";
+document.getElementById("stu8").innerHTML ="Evy H.";
+document.getElementById("stu9").value ="Madison K.";
+document.getElementById("stu9").innerHTML ="Madison K.";
+document.getElementById("stu10").value ="Olly K.";
+document.getElementById("stu10").innerHTML ="Olly K.";
+document.getElementById("stu11").value = "Andrey L.";
+document.getElementById("stu11").innerHTML ="Andrey L.";
+document.getElementById("stu12").value ="Bela M.";
+document.getElementById("stu12").innerHTML ="Bela M.";
+document.getElementById("stu13").value ="Ivy N.";
+document.getElementById("stu13").innerHTML ="Ivy N.";
+document.getElementById("stu14").value ="Emma N.";
+document.getElementById("stu14").innerHTML ="Emma N.";
+document.getElementById("stu15").value ="Chintan P.";
+document.getElementById("stu15").innerHTML ="Chintan P.";
+document.getElementById("stu16").value ="Stephanie P.";
+document.getElementById("stu16").innerHTML ="Stephanie P.";
+document.getElementById("stu17").value ="Emily S.";
+document.getElementById("stu17").innerHTML ="Emily S.";
+document.getElementById("stu18").value ="Asiya W.";
+document.getElementById("stu18").innerHTML ="Asiya W.";
+
+}
+if (per ==="Period 6" ){
+document.getElementById("stu1").value ="Yecenia A.";
+document.getElementById("stu1").innerHTML ="Yecenia A.";
+document.getElementById("stu2").value ="Marc B.";
+document.getElementById("stu2").innerHTML ="Marc B.";
+document.getElementById("stu3").value ="Matthew B.";
+document.getElementById("stu3").innerHTML ="Matthew B.";
+document.getElementById("stu4").value ="Rebecca D.";
+document.getElementById("stu4").innerHTML ="Rebecca D.";
+document.getElementById("stu5").value ="Maya B.";
+document.getElementById("stu5").innerHTML ="Maya B.";
+document.getElementById("stu6").value ="Mia E.";
+document.getElementById("stu6").innerHTML ="Mia E.";
+document.getElementById("stu7").value ="Angelo G.";
+document.getElementById("stu7").innerHTML ="Angelo G.";
+document.getElementById("stu8").value ="Bella G.";
+document.getElementById("stu8").innerHTML ="Bella G.";
+document.getElementById("stu9").value ="Max K.";
+document.getElementById("stu9").innerHTML ="Max K.";
+document.getElementById("stu10").value ="David L.";
+document.getElementById("stu10").innerHTML ="David L.";
+document.getElementById("stu11").value ="Gavin O.";
+document.getElementById("stu11").innerHTML ="Gavin O.";
+document.getElementById("stu12").value ="Nathan P.";
+document.getElementById("stu12").innerHTML ="Nathan P.";
+document.getElementById("stu13").value ="Shazma S.";
+document.getElementById("stu13").innerHTML ="Shazma S.";
+document.getElementById("stu14").value ="Corbin T.";
+document.getElementById("stu14").innerHTML ="Corbin T.";
+document.getElementById("stu15").value ="Linda T.";
+document.getElementById("stu15").innerHTML ="Linda T.";
+document.getElementById("stu16").value ="Nick W.";
+document.getElementById("stu16").innerHTML ="Nick W.";
+document.getElementById("stu17").value ="Natalia W.";
+document.getElementById("stu17").innerHTML ="Natalia W.";
+document.getElementById("stu18").value ="";
+document.getElementById("stu18").innerHTML ="";
+
+}
+if (per ==="Period 7" ){
+document.getElementById("stu1").value ="Emily C.";
+document.getElementById("stu1").innerHTML ="Emily C.";
+document.getElementById("stu2").value ="Olivia D.";
+document.getElementById("stu2").innerHTML ="Olivia D.";
+document.getElementById("stu3").value ="Robert G.";
+document.getElementById("stu3").innerHTML ="Robert G.";
+document.getElementById("stu4").value ="Jayne J.";
+document.getElementById("stu4").innerHTML ="Jayne J.";
+document.getElementById("stu5").value ="Meggie K.";
+document.getElementById("stu5").innerHTML ="Meggie K.";
+document.getElementById("stu6").value ="Sebastion M.";
+document.getElementById("stu6").innerHTML ="Sebastion M.";
+document.getElementById("stu7").value ="Andrea M.";
+document.getElementById("stu7").innerHTML ="Andrea M.";
+document.getElementById("stu8").value ="Josh M.";
+document.getElementById("stu8").innerHTML ="Josh M.";
+document.getElementById("stu9").value ="Natalie M.";
+document.getElementById("stu9").innerHTML ="Natalie M.";
+document.getElementById("stu10").value ="James N.";
+document.getElementById("stu10").innerHTML ="James N.";
+document.getElementById("stu11").value ="Stephen O.";
+document.getElementById("stu11").innerHTML ="Stephen O.";
+document.getElementById("stu12").value ="Anthony Rico.";
+document.getElementById("stu12").innerHTML ="Anthony Rico.";
+document.getElementById("stu13").value ="Anthony Ritacco.";
+document.getElementById("stu13").innerHTML ="Anthony Ritacco.";
+document.getElementById("stu14").value ="Dylan S.";
+document.getElementById("stu14").innerHTML ="Dylan S.";
+document.getElementById("stu15").value ="Pru S.";
+document.getElementById("stu15").innerHTML ="Pru S.";
+document.getElementById("stu16").value ="Tina T.";
+document.getElementById("stu16").innerHTML ="Tina T.";
+document.getElementById("stu17").value ="Jayden W.";
+document.getElementById("stu17").innerHTML ="Jayden W.";
+document.getElementById("stu18").value ="Alisa W.";
+document.getElementById("stu18").innerHTML ="Alisa W.";
+
+}
+}
+}
+set = setInterval(pCComplete,10);
+if (document.getElementById("stu1").value =""){
+clearInterval(set);}
+
+}
+function setCookie(cname,cvalue) {
+    var d = new Date();
+    document.cookie = cname + "=" + cvalue + ";" ;
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+check1= getCookie("check1");
+check2= getCookie("check2");
+check3= getCookie("check3");
+check4= getCookie("check4");
+check5= getCookie("check5");
+check6= getCookie("check6");
+check7= getCookie("check7");
+check8= getCookie("check8");
+check9= getCookie("check9");
+check10= getCookie("check10");
+check11= getCookie("check11");
+check12= getCookie("check12");
+check13= getCookie("check13");
+check14= getCookie("check14");
+check15= getCookie("check15");
+check16= getCookie("check16");
+check17= getCookie("check17");
+check18= getCookie("check18");
+check19= getCookie("check19");
+check20= getCookie("check20");
+check21= getCookie("check21");
+check22= getCookie("check22");
+check23= getCookie("check23");
+check24= getCookie("check24");
+function getNumCookie(inp){
+var x = getCookie(inp);
+var xy = parseFloat(x);
+return xy;
+}
+function getBoolCookie(inp){
+var x = getCookie(inp);
+if (x === "true"){
+return true;}
+else if (x==="false"){
+return false;
+}
+}
+
+function go(){
+ hi = document.getElementById("tur").value 
+ if (hi===""){
+ alert("Please choose period and person");
+ }
+ if (hi !== ""){
+teleport=0;
+if (teleport===0){
+ hi = document.getElementById("tur").value
+ teleport =1;
+ }
+ var r = 30;
+ var rt = 43;
+ var f=0;
+ if(teleport ===1 && hi !== undefined){
+$("#tur").remove();
+$("#turt").remove();
+$("button").remove();
+
+ var x = document.createElement("h3");
+    var t = document.createTextNode("Hi "+hi);
+    x.appendChild(t);
+    document.body.appendChild(x);
+	x.style.color="blue";
+    function createbook(name1,condition,idt,idt2,who,idt3,which){//////////////////////////////////////////
+	this.int;
+	this.smonth;
+	this.spmonth;
+	this.mch;
+	this.opmonth;
+	this.omonth;
+	this.pdate;
+	this.pfudate;
+	this.overdue = name1+" Overdue ( "+hi+" )";
+	this.poverdue ;
+	this.num=undefined;
+	 var destroy =false;
+	 this.end=true;
+this.date=undefined;
+this.fudate=undefined;
+this.tfudate = false;
+this.nc=1;
+this.month=undefined;
+this.pmonth=undefined;
+this.maxmonth=undefined;
+this.pmaxmonth=undefined;
+this.day = new Date();
+
+this.book= document.createElement("P");
+  this.book.id=idt3;
+  this.bookt = document.createTextNode(name1+" checked out to "+who);
+    	this.book.appendChild(this.bookt);
+    document.body.appendChild(this.book);
+	
+    
+    
+   this.book.style.position = "absolute";
+   this.y = this.book.style.top = r+"px";
+   
+this.booko= document.createElement("P");
+    this.bookot = document.createTextNode("Days :");
+  
+    this.booko.appendChild(this.bookot);
+    document.body.appendChild(this.booko);
+   this.booko.style.position = "absolute";
+   this.y5 = this.booko.style.top = r+"px";
+   this.y55 = this.booko.style.left ="400px";
+   
+  this.bok= document.createElement("button");
+    this.bokt = document.createTextNode("Check out");
+		this.CheckOut = function() {
+
+var nu = document.getElementById(idt).value;
+var num = parseFloat(nu);
+
+if (num>31 || num<1 || nu === ""){
+alert("Days to check out "+name1+" needs to be less then or equal to 31 and greater than or equal to 1");
+ document.getElementById(idt).value="1";
+ nu = document.getElementById(idt).value;
+ num = parseFloat(nu);
+}else {
+alert(name1+" is checked out to "+ hi + " for " +nu + " days");
+document.getElementById(idt2).value="Checked out to you";
+document.getElementById(idt).value="";
+document.getElementById(idt2).disabled=true;
+if (which === 1){
+if (who === check1){
+ check1 = hi;
+ 
+who = check1;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 2){
+if (who === check2){
+ check2 = hi;
+ 
+who = check2;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 3){
+if (who === check3){
+ check3 = hi;
+ 
+who = check3;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 4){
+if (who === check4){
+ check4 = hi;
+who = check4;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 5){
+if (who === check5){
+ check5 = hi;
+
+who = check5;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 6){
+if (who === check6){
+ check6 = hi;
+
+who = check6;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 7){
+if (who === check7){
+ check7 = hi;
+
+who = check7;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 8){
+if (who === check8){
+ check8 = hi;
+
+who = check8;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 9){
+if (who === check9){
+ check9 = hi;
+
+who = check9;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 10){
+if (who === check10){
+ check10 = hi;
+ 
+who = check10;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 11){
+if (who === check11){
+ check11 = hi;
+
+who = check11;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+
+if (which === 12){
+if (who === check12){
+ check12 = hi;
+ 
+who = check12;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 13){
+if (who === check3){
+ check3 = hi;
+ 
+who = check3;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 14){
+if (who === check14){
+ check14 = hi;
+who = check14;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 15){
+if (who === check15){
+ check15 = hi;
+
+who = check15;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 16){
+if (who === check16){
+ check16 = hi;
+
+who = check16;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 17){
+if (who === check17){
+ check17 = hi;
+
+who = check17;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 18){
+if (who === check18){
+ check18 = hi;
+
+who = check18;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 19){
+if (who === check19){
+ check19 = hi;
+
+who = check19;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 20){
+if (who === check20){
+ check20 = hi;
+ 
+who = check20;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 21){
+if (who === check21){
+ check21 = hi;
+
+who = check21;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 23){
+if (who === check23){
+ check23 = hi;
+ 
+who = check23;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 4){
+if (who === check4){
+ check4 = hi;
+who = check4;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which ===1){
+setCookie("check1",who);
+book1.num = num;
+book1.end= false;
+}
+if (which ===2){
+setCookie("check2",who);
+book2.num = num;
+book2.end= false;
+}
+if (which ===3){
+setCookie("check3",who);
+book3.num = num;
+book3.end= false;
+}
+if (which ===4){
+setCookie("check4",who);
+book4.num = num;
+book4.end= false;
+}
+if (which ===5){
+setCookie("check5",who);
+book5.num = num;
+book5.end= false;
+}
+if (which ===6){
+setCookie("check6",who);
+book6.num = num;
+book6.end= false;
+}
+if (which ===7){
+setCookie("check7",who);
+book7.num = num;
+book7.end= false;
+}
+if (which ===8){
+setCookie("check8",who);
+book8.num = num;
+book8.end= false;
+}
+if (which ===9){
+setCookie("check9",who);
+book9.num = num;
+book9.end= false;
+}
+if (which ===10){
+setCookie("check10",who);
+book10.num = num;
+book10.end= false;
+}
+if (which ===11){
+setCookie("check11",who);
+book11.num = num;
+book11.end= false;
+}
+if (which ===12){
+setCookie("check12",who);
+book12.num = num;
+book12.end= false;
+}
+if (which ===13){
+setCookie("check13",who);
+book13.num = num;
+book13.end= false;
+}
+if (which ===14){
+setCookie("check14",who);
+book14.num = num;
+book14.end= false;
+}
+if (which ===15){
+setCookie("check15",who);
+book15.num = num;
+book15.end= false;
+}
+if (which ===16){
+setCookie("check16",who);
+book16.num = num;
+book16.end= false;
+}
+if (which ===17){
+setCookie("check17",who);
+book17.num = num;
+book7.end= false;
+}
+if (which ===18){
+setCookie("check18",who);
+book18.num = num;
+book18.end= false;
+}
+if (which ===19){
+setCookie("check19",who);
+book19.num = num;
+book19.end= false;
+}
+if (which ===20){
+setCookie("check20",who);
+book20.num = num;
+book20.end= false;
+}
+if (which ===21){
+setCookie("check21",who);
+book21.num = num;
+book21.end= false;
+}
+if (which ===22){
+setCookie("check22",who);
+book22.num = num;
+book22.end= false;
+}
+if (which ===23){
+setCookie("check23",who);
+book23.num = num;
+book23.end= false;
+}
+if (which ===24){
+setCookie("check24",who);
+book24.num = num;
+book24.end= false;
+}
+if (which ===1){
+book1.int = setInterval(book1.myf, 10,book1,"book1");
+}
+if (which ===2){
+book2.int = setInterval(book2.myf, 10,book2,"book2");
+}
+if (which ===3){
+book3.int = setInterval(book3.myf, 10,book3,"book3");
+}
+if (which ===4){
+book4.int = setInterval(book4.myf, 10,book4,"book4");
+}
+if (which ===5){
+book5.int = setInterval(book5.myf, 10,book5,"book5");
+}
+if (which ===6){
+book6.int = setInterval(book6.myf, 10,book6,"book6");
+}
+if (which ===7){
+book7.int = setInterval(book7.myf, 10,book7,"book7");
+}
+if (which ===8){
+book8.int = setInterval(book8.myf, 10,book8,"book8");
+}
+if (which ===9){
+book9.int = setInterval(book9.myf, 10,book9,"book9");
+}
+if (which ===10){
+book10.int = setInterval(book10.myf, 10,book10,"book10");
+}
+if (which ===11){
+book11.int = setInterval(book11.myf, 10,book11,"book11");
+}
+
+if (which ===12){
+book12.int = setInterval(book12.myf, 10,book12,"book12");
+}
+if (which ===13){
+book13.int = setInterval(book13.myf, 10,book13,"book13");
+}
+if (which ===14){
+book14.int = setInterval(book14.myf, 10,book14,"book14");
+}
+if (which ===15){
+book15.int = setInterval(book15.myf, 10,book15,"book15");
+}
+if (which ===16){
+book16.int = setInterval(book16.myf, 10,book16,"book16");
+}
+if (which ===17){
+book17.int = setInterval(book17.myf, 10,book17,"book17");
+}
+if (which ===18){
+book18.int = setInterval(book18.myf, 10,book18,"book18");
+}
+if (which ===19){
+book19.int = setInterval(book19.myf, 10,book19,"book19");
+}
+if (which ===20){
+book20.int = setInterval(book20.myf, 10,book20,"book20");
+}
+if (which ===21){
+book21.int = setInterval(book21.myf, 10,book21,"book21");
+}
+if (which ===22){
+book22.int = setInterval(book22.myf, 10,book22,"book22");
+}
+if (which ===23){
+book23.int = setInterval(book23.myf, 10,book23,"book23");
+}
+if (which ===24){
+book24.int = setInterval(book24.myf, 10,book24,"book24");
+}
+}
+
+
+
+}
+
+this.CheckOut2 = function() {
+
+
+document.getElementById(idt).value="";
+document.getElementById(idt2).disabled=true;
+if (which === 1){
+if (who === check1){
+ check1 = hi;
+ 
+who = check1;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 2){
+if (who === check2){
+ check2 = hi;
+ 
+who = check2;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 3){
+if (who === check3){
+ check3 = hi;
+ 
+who = check3;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 4){
+if (who === check4){
+ check4 = hi;
+who = check4;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 5){
+if (who === check5){
+ check5 = hi;
+
+who = check5;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 6){
+if (who === check6){
+ check6 = hi;
+
+who = check6;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 7){
+if (who === check7){
+ check7 = hi;
+
+who = check7;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 8){
+if (who === check8){
+ check8 = hi;
+
+who = check8;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 9){
+if (who === check9){
+ check9 = hi;
+
+who = check9;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 10){
+if (who === check10){
+ check10 = hi;
+ 
+who = check10;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 11){
+if (who === check11){
+ check11 = hi;
+
+who = check11;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+
+if (which === 12){
+if (who === check12){
+ check12 = hi;
+ 
+who = check12;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 13){
+if (who === check3){
+ check3 = hi;
+ 
+who = check3;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 14){
+if (who === check14){
+ check14 = hi;
+who = check14;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 15){
+if (who === check15){
+ check15 = hi;
+
+who = check15;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 16){
+if (who === check16){
+ check16 = hi;
+
+who = check16;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 17){
+if (who === check17){
+ check17 = hi;
+
+who = check17;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 18){
+if (who === check18){
+ check18 = hi;
+
+who = check18;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 19){
+if (who === check19){
+ check19 = hi;
+
+who = check19;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 20){
+if (who === check20){
+ check20 = hi;
+ 
+who = check20;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 21){
+if (who === check21){
+ check21 = hi;
+
+who = check21;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 23){
+if (who === check23){
+ check23 = hi;
+ 
+who = check23;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which === 4){
+if (who === check4){
+ check4 = hi;
+who = check4;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+
+}
+}
+if (which ===1){
+setCookie("check1",who);
+book1.num = num;
+book1.end= false;
+}
+if (which ===2){
+setCookie("check2",who);
+book2.num = num;
+book2.end= false;
+}
+if (which ===3){
+setCookie("check3",who);
+book3.num = num;
+book3.end= false;
+}
+if (which ===4){
+setCookie("check4",who);
+book4.num = num;
+book4.end= false;
+}
+if (which ===5){
+setCookie("check5",who);
+book5.num = num;
+book5.end= false;
+}
+if (which ===6){
+setCookie("check6",who);
+book6.num = num;
+book6.end= false;
+}
+if (which ===7){
+setCookie("check7",who);
+book7.num = num;
+book7.end= false;
+}
+if (which ===8){
+setCookie("check8",who);
+book8.num = num;
+book8.end= false;
+}
+if (which ===9){
+setCookie("check9",who);
+book9.num = num;
+book9.end= false;
+}
+if (which ===10){
+setCookie("check10",who);
+book10.num = num;
+book10.end= false;
+}
+if (which ===11){
+setCookie("check11",who);
+book11.num = num;
+book11.end= false;
+}
+if (which ===12){
+setCookie("check12",who);
+book12.num = num;
+book12.end= false;
+}
+if (which ===13){
+setCookie("check13",who);
+book13.num = num;
+book13.end= false;
+}
+if (which ===14){
+setCookie("check14",who);
+book14.num = num;
+book14.end= false;
+}
+if (which ===15){
+setCookie("check15",who);
+book15.num = num;
+book15.end= false;
+}
+if (which ===16){
+setCookie("check16",who);
+book16.num = num;
+book16.end= false;
+}
+if (which ===17){
+setCookie("check17",who);
+book17.num = num;
+book7.end= false;
+}
+if (which ===18){
+setCookie("check18",who);
+book18.num = num;
+book18.end= false;
+}
+if (which ===19){
+setCookie("check19",who);
+book19.num = num;
+book19.end= false;
+}
+if (which ===20){
+setCookie("check20",who);
+book20.num = num;
+book20.end= false;
+}
+if (which ===21){
+setCookie("check21",who);
+book21.num = num;
+book21.end= false;
+}
+if (which ===22){
+setCookie("check22",who);
+book22.num = num;
+book22.end= false;
+}
+if (which ===23){
+setCookie("check23",who);
+book23.num = num;
+book23.end= false;
+}
+if (which ===24){
+setCookie("check24",who);
+book24.num = num;
+book24.end= false;
+}
+if (which ===1){
+book1.int = setInterval(book1.myf, 10,book1,"book1");
+}
+if (which ===2){
+book2.int = setInterval(book2.myf, 10,book2,"book2");
+}
+if (which ===3){
+book3.int = setInterval(book3.myf, 10,book3,"book3");
+}
+if (which ===4){
+book4.int = setInterval(book4.myf, 10,book4,"book4");
+}
+if (which ===5){
+book5.int = setInterval(book5.myf, 10,book5,"book5");
+}
+if (which ===6){
+book6.int = setInterval(book6.myf, 10,book6,"book6");
+}
+if (which ===7){
+book7.int = setInterval(book7.myf, 10,book7,"book7");
+}
+if (which ===8){
+book8.int = setInterval(book8.myf, 10,book8,"book8");
+}
+if (which ===9){
+book9.int = setInterval(book9.myf, 10,book9,"book9");
+}
+if (which ===10){
+book10.int = setInterval(book10.myf, 10,book10,"book10");
+}
+if (which ===11){
+book11.int = setInterval(book11.myf, 10,book11,"book11");
+}
+
+if (which ===12){
+book12.int = setInterval(book12.myf, 10,book12,"book12");
+}
+if (which ===13){
+book13.int = setInterval(book13.myf, 10,book13,"book13");
+}
+if (which ===14){
+book14.int = setInterval(book14.myf, 10,book14,"book14");
+}
+if (which ===15){
+book15.int = setInterval(book15.myf, 10,book15,"book15");
+}
+if (which ===16){
+book16.int = setInterval(book16.myf, 10,book16,"book16");
+}
+if (which ===17){
+book17.int = setInterval(book17.myf, 10,book17,"book17");
+}
+if (which ===18){
+book18.int = setInterval(book18.myf, 10,book18,"book18");
+}
+if (which ===19){
+book19.int = setInterval(book19.myf, 10,book19,"book19");
+}
+if (which ===20){
+book20.int = setInterval(book20.myf, 10,book20,"book20");
+}
+if (which ===21){
+book21.int = setInterval(book21.myf, 10,book21,"book21");
+}
+if (which ===22){
+book22.int = setInterval(book22.myf, 10,book22,"book22");
+}
+if (which ===23){
+book23.int = setInterval(book23.myf, 10,book23,"book23");
+}
+if (which ===24){
+book24.int = setInterval(book24.myf, 10,book24,"book24");
+}
+
+
+}
+
+ this.myf = function(bko,bko2){
+ var check = getNumCookie(bko2+".fudate");
+ var checkN = isNaN(check)
+ if( checkN!== true){
+bko.fudate=getNumCookie(bko2+".fudate");
+bko.tfudate= getBoolCookie(bko2+".tfudate");
+bko.maxmonth = getNumCookie(bko2+".maxmonth");
+bko.pmaxmonth = getNumCookie(bko2+".pmaxmonth");
+bko.nc = getNumCookie(bko2+".nc");
+bko.spmonth = getNumCookie(bko2+".spmonth");
+bko.pmonth = getNumCookie(bko2+".pmonth");
+bko.poverdue = getCookie(bko2+".poverdue");
+
+}
+if (bko.pdate=== undefined  && bko.pfudate  === undefined ){
+if (bko.poverdue === "no"){
+bko.pdate = bko.day.getDate();
+bko.omonth = bko.day.getMonth();
+if (bko.opmonth === undefined ){
+bko.opmonth = bko.omonth;
+}
+bko.pfudate = bko.pdate + 1;
+if (bko.pfudate > bko.maxmonth){
+bko.pfudate = pfudate -maxmonth;
+}
+}
+}
+if(bko.pdate !== undefined && bko.pfudate !== undefined && bko.pdate>= bko.pfudate ){
+bko.poverdue = prompt("Did "+who+" return the book type in yes or no");
+if (bko.poverdue === "yes"){
+bko.book.style = bko.book.style + "color:black;"
+}
+if (bko.poverdue === "no"){
+bko.pfudate = bko.pdate + 1;
+if (bko.omonth !== bko.opmonth){
+bko.pfudate = bko.pfudate -bko.maxmonth;
+}
+}
+
+}
+if (bko.omonth !== bko.opmonth){
+bko.pfudate = bko.pfudate -bko.maxmonth;
+}
+setCookie(bko2+".pfudate",bko.fudate);
+setCookie(bko2+".opmonth",bko.pmaxmonth);
+setCookie(bko2+".poverdue",bko.poverdue);
+if (bko.end===false){
+bko.date = bko.day.getDate();
+bko.smonth = bko.day.getMonth();
+bko.pmaxmonth=30;
+if (bko.fudate === undefined ){
+bko.fudate =bko.num +bko.date;
+
+}
+
+bko.month = bko.day.getMonth();
+if (bko.pmonth=== undefined){
+bko.pmonth = bko.month;
+bko.spmonth = bko.pmonth;
+}
+if (bko.pmonth!==bko.month){
+var ch =0;
+if (bko.nc === 1 && ch===0){
+bko.nc=2;
+ch=1;
+}
+if (bko.nc === 2 && ch===0){
+bko.nc=2;
+ch=1;
+}
+ch=0;
+
+}
+
+if (bko.nc===1){bko.maxmonth=30;}
+if (bko.nc===2){bko.maxmonth=31;}
+
+if (bko.month ===1){
+bko.nc ===1;
+bko.maxmonth=31;}
+if (bko.month === 2){
+bko.nc === 1;
+bko.maxmonth =28;}
+if (bko.fudate>bko.pmaxmonth){
+bko.fudate= bko.fudate-bko.pmaxmonth;
+bko.tfudate = true;
+
+}
+if (bko.smonth !== bko.spmonth && bko.mch === undefined){
+bko.mch = 1;
+
+}
+setCookie(bko2+".fudate",bko.fudate);
+setCookie(bko2+".tfudate",bko.tfudate);
+setCookie(bko2+".smonth",bko.smonth);
+setCookie(bko2+".mch",bko.mch);
+setCookie(bko2+".maxmonth",bko.maxmonth);
+setCookie(bko2+".pmaxmonth",bko.pmaxmonth);
+setCookie(bko2+".poverdue",bko.poverdue);
+setCookie(bko2+".nc",bko.nc);
+setCookie(bko2+".pmonth",bko.pmonth);
+setCookie(bko2+".end",bko.end);
+
+if (bko.tfudate===true){
+if (bko.mch ===1 ){
+bko.spmonth = bko.smonth
+bko.mch =2;}
+if (bko.date >= bko.fudate &&bko.maxmonth!==bko.pmaxmonth || bko.smonth !== bko.spmonth){
+
+if (which ===1){
+who = check1;
+check1="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check1;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===2){
+who = check2;
+check2="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check2;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===3){
+who = check3;
+check3="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check3;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===4){
+who = check4;
+check4="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check4;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===5){
+who = check5;
+check5="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check5;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===6){
+who = check6;
+check6="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check6;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===7){
+who = check7;
+check7="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check7;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===8){
+who = check8;
+check8="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check8;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===9){
+who = check9;
+check9="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check9;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===10){
+who = check10;
+check10="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check10;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===11){
+
+who = check11;
+check11="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check11;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+
+who = check1;
+check1="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check1;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===12){
+who = check12;
+check12="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check12;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===13){
+who = check13;
+check13="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check13;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===14){
+who = check14;
+check14="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check14;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===15){
+who = check15;
+check15="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check15;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===16){
+who = check16;
+check16="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check16;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===17){
+who = check17;
+check17="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check17;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===18){
+who = check18;
+check18="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check18;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===19){
+who = check19;
+check19="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check19;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===20){
+who = check20;
+check20="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check20;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===21){
+
+who = check21;
+check21="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check21;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===22){
+who = check22;
+check22="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check22;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===23){
+who = check23;
+check23="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check23;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===24){
+who = check24;
+check24="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check24;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+bko.date=undefined;
+bko.spmonth = undefined;
+bko.smonth = undefined;
+bko.fudate= undefined;
+bko.month=undefined;
+bko.pmonth=undefined;
+bko.mch = undefined;
+bko.tfudate=false;
+bko.pmaxmonth=bko.maxmonth;
+bko.maxmonth=undefined
+bko.end= true;
+setCookie(bko2+".fudate",bko.fudate);
+setCookie(bko2+".tfudate",bko.tfudate);
+setCookie(bko2+".smonth",bko.smonth);
+setCookie(bko2+".mch",bko.mch);
+setCookie(bko2+".maxmonth",bko.maxmonth);
+setCookie(bko2+".pmaxmonth",bko.pmaxmonth);
+setCookie(bko2+".poverdue",bko.poverdue);
+setCookie(bko2+".nc",bko.nc);
+setCookie(bko2+".pmonth",bko.pmonth);
+setCookie(bko2+".end",bko.end);
+}
+}
+
+if (bko.tfudate===false){
+if (bko.date >= bko.fudate && bko.maxmonth===bko.pmaxmonth || bko.smonth !== bko.spmonth){
+if (which ===1){
+who = check1;
+check1="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check1;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===2){
+who = check2;
+check2="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check2;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===3){
+who = check3;
+check3="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check3;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===4){
+who = check4;
+check4="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check4;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===5){
+who = check5;
+check5="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check5;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===6){
+who = check6;
+check6="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check6;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===7){
+who = check7;
+check7="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check7;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===8){
+who = check8;
+check8="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check8;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===9){
+who = check9;
+check9="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check9;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===10){
+who = check10;
+check10="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check10;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===11){
+
+who = check11;
+check11="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check11;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+
+who = check1;
+check1="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check1;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===12){
+who = check12;
+check12="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check12;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===13){
+who = check13;
+check13="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check13;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===14){
+who = check14;
+check14="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check14;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===15){
+who = check15;
+check15="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check15;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===16){
+who = check16;
+check16="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check16;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===17){
+who = check17;
+check17="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check17;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===18){
+who = check18;
+check18="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check18;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===19){
+who = check19;
+check19="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check19;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===20){
+who = check20;
+check20="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check20;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===21){
+
+who = check21;
+check21="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check21;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===22){
+who = check22;
+check22="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check22;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===23){
+who = check23;
+check23="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check23;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+if (which ===24){
+who = check24;
+check24="";
+bko.poverdue = prompt(who+" should have returned the book "+name1+". Did "+who+" return the book type in yes or no");
+if (bko.poverdue==="yes"){
+alert("ok");
+}
+
+who = check24;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=false;
+if (bko.poverdue==="no"){
+document.getElementById(idt3).innerHTML = bko.overdue;
+
+document.getElementById(idt2).disabled=true;
+}
+clearInterval(bko.int);
+}
+bko.date=undefined;
+bko.fudate= undefined;
+bko.spmonth = undefined;
+bko.smonth = undefined;
+bko.month=undefined;
+bko.pmonth=undefined;
+bko.tfudate=false;
+bko.pmaxmonth=bko.maxmonth;
+bko.maxmonth=undefined
+bko.end= true;
+setCookie(bko2+".fudate",bko.fudate);
+setCookie(bko2+".tfudate",bko.tfudate);
+setCookie(bko2+".smonth",bko.smonth);
+setCookie(bko2+".mch",bko.mch);
+setCookie(bko2+".maxmonth",bko.maxmonth);
+setCookie(bko2+".pmaxmonth",bko.pmaxmonth);
+setCookie(bko2+".poverdue",bko.poverdue);
+setCookie(bko2+".nc",bko.nc);
+setCookie(bko2+".pmonth",bko.pmonth);
+setCookie(bko2+".end",bko.end);
+}
+}
+}
+}
+
+    this.bok.appendChild(this.bokt);
+    document.body.appendChild(this.bok);
+	this.bok.id =idt2;
+	this.id=idt2;
+if (which===1){
+if (who !== ""){
+if (who===hi){
+who=check1;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check1;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===2){
+if (who !== ""){
+if (who===hi){
+who=check2;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check2;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===3){
+if (who !== ""){
+if (who===hi){
+who=check3;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check3;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===4){
+if (who !== ""){
+if (who===hi){
+who=check4;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check4;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===5){
+if (who !== ""){
+if (who===hi){
+who=check5;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check5;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===6){
+if (who !== ""){
+if (who===hi){
+who=check6;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check6;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===7){
+if (who !== ""){
+if (who===hi){
+who=check7;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check7;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===8){
+if (who !== ""){
+if (who===hi){
+who=check8;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check8;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===9){
+if (who !== ""){
+if (who===hi){
+who=check9;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check9;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===10){
+if (who !== ""){
+if (who===hi){
+who=check10;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check10;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===11){
+if (who !== ""){
+if (who===hi){
+who=check11;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check11;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===12){
+if (who !== ""){
+if (who===hi){
+who=check12;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check12;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===13){
+if (who !== ""){
+if (who===hi){
+who=check13;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check13;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===14){
+if (who !== ""){
+if (who===hi){
+who=check14;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check14;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===15){
+if (who !== ""){
+if (who===hi){
+who=check15;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check15;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===16){
+if (who !== ""){
+if (who===hi){
+who=check16;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check16;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===17){
+if (who !== ""){
+if (who===hi){
+who=check17;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check17;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===18){
+if (who !== ""){
+if (who===hi){
+who=check18;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check18;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}if (which===19){
+if (who !== ""){
+if (who===hi){
+who=check19;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check19;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===20){
+if (who !== ""){
+if (who===hi){
+who=check20;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check20;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}if (which===21){
+if (who !== ""){
+if (who===hi){
+who=check21;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check21;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}if (which===22){
+if (who !== ""){
+if (who===hi){
+who=check22;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check22;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===23){
+if (who !== ""){
+if (who===hi){
+who=check23;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check23;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (which===24){
+if (who !== ""){
+if (who===hi){
+who=check24;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check24;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+if (who !== ""){
+if (who===hi){
+who=check11;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check11;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+
+if (who !== ""){
+if (who===hi){
+who=check11;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}else{
+who = check11;
+document.getElementById(idt3).innerHTML = name1+" checked out to "+who ;
+document.getElementById(idt2).disabled=true;
+}
+}    
+}
+
+
+	document.getElementById(idt2).onclick = this.CheckOut;
+	
+   this.bok.style.position = "absolute";
+   this.y3 = this.bok.style.top = rt+"px";
+   this.y22 = this.bok.style.left = "550px";
+   
+   
+   this.boook= document.createElement("Input");
+this.boook.type="text";
+this.boook.size = "5";
+this.boook.value=condition;
+this.boook.disabled=true;
+
+    this.boookt = document.createTextNode(name1);
+    
+    this.boook.appendChild(this.boookt);
+document.body.appendChild(this.boook);
+    this.boook.style.position = "absolute";
+ this.y2 = this.boook.style.top = rt+"px";
+  this.y22 = this.boook.style.left = "300px";
+  
+  this.bk= document.createElement("Input");
+this.bk.type="number";
+this.bk.min="1";
+this.bk.max="30";
+this.bk.id = idt;
+
+    this.bkt = document.createTextNode(name1);
+    
+    this.bk.appendChild(this.bkt);
+document.body.appendChild(this.bk);
+    this.bk.style.position = "absolute";
+ this.y4 = this.bk.style.top = rt+"px";
+  this.y44 = this.bk.style.left = "450px";
+
+rt += 30;
+   r+=30;
+
+}
+function bookcheck(bko,bko2){
+var x = getBoolCookie(bko2+".end");
+bko.end=x;
+if (bko.end=== false){
+bko.CheckOut();
+}
+}
+
+book1 = new createbook("Organic Chemistry","good","a","aa",check1,"ab",1);
+book2 = new createbook(" Chemistry","good","b","bb",check2,"bc",2);
+book3 = new createbook("Universe","good","c","cc",check3,"cd",3);
+book4 = new createbook("The Sciences Edition 5","good","d","dd",check4,"de",4);
+book5 = new createbook("Mapping The Universe","good","e","ee",check5,"ef",5);
+book6 =new createbook("The Sciences Edition 6","good","f","ff",check6,"fg",6);
+book7 = new createbook("A Sky Wonderful with Stars","good","g","gg",check7,"gh",7);
+book8 = new createbook("Microbiology","good","h","hh",check8,"hi",8);
+book9 = new createbook("A Guide to Microbiology","good","i","ii",check9,"ij",9);
+book10 = new createbook("A Photographic Atlas for Microbiology","good","j","jj",check10,"jk",10);
+book11 = new createbook("Principles of Anatomy","good","k","kk",check11,"kl",11);
+book12 = new createbook("Genetics","good","l","ll",check12,"ln",12);
+book13 = new createbook("Ecology and Feild Biology","good","n","nn",check13,"nm",13);
+book14 = new createbook("College Physics","good","m","mm",check14,"mo",14);
+book15 = new createbook("College Physics Student Workbook Volume 1","good","o","oo",check15,"op",15);
+book16 = new createbook("College Physics Student Workbook Volume 2","good","p","pp",check16,"pq",16);
+book17 = new createbook("Topo Graphic Maps","good","q","qq",check17,"qr",17);
+book18 = new createbook("Mission to the Moon","good","r","rr",check18,"rs",18);
+book19 = new createbook("Phyisical Anthropology and Archaeology","good","s","ss",check19,"st",19);
+book20 = new createbook("The Illustrated Atlas of the Human Body","good","t","tt",check20,"tu",20);
+book21 = new createbook("BioChemistry","good","u","uu",check21,"uv",21);
+book22 = new createbook("The Sourcebook for Biological Sciences","good","v","vv",check22,"vw",22);
+book23 = new createbook("Biology","good","w","ww",check23,"wx",21);
+book24 = new createbook("Essential Biology with Physiology","good","x","xx",check24,"xy",22);
+function bookcheck(bko,bko2){
+var x = getBoolCookie(bko2+".end");
+var y = getCookie(bko2+".poverdue");
+bko.end=x;
+bko.poverdue =y;
+if (bko.end=== false || bko.poverdue === "no"){
+bko.CheckOut2();
+}
+
+}
+bookcheck(book1,"book1");
+bookcheck(book2,"book2");
+bookcheck(book3,"book3");
+bookcheck(book4,"book4");
+bookcheck(book5,"book5");
+bookcheck(book6,"book6");
+bookcheck(book7,"book7");
+bookcheck(book8,"book8");
+bookcheck(book9,"book9");
+bookcheck(book10,"book10");
+bookcheck(book11,"book11");
+bookcheck(book12,"book12");
+bookcheck(book13,"book13");
+bookcheck(book14,"book14");
+bookcheck(book15,"book15");
+bookcheck(book16,"book16");
+bookcheck(book17,"book17");
+bookcheck(book18,"book18");
+bookcheck(book19,"book19");
+bookcheck(book20,"book20");
+bookcheck(book21,"book21");
+bookcheck(book22,"book22");
+bookcheck(book23,"book23");
+bookcheck(book24,"book24");
+
+function change (name1){
+    this.boook= document.createElement("button");
+	this.boook.id = "yay";
+    this.boookt = document.createTextNode(name1);
+    
+    this.boook.appendChild(this.boookt);
+document.body.appendChild(this.boook);
+document.getElementById(this.boook.id).onclick = change2;
+    this.boook.style.position = "absolute";
+ this.boook.style.top = "500px";
+ 
+}
+
+gat = new change("Done");
+} 
+
+
+}
+} 
+  change2 = function(){$("button").remove();$("Input").remove();$("p").remove();$("h3").remove();
+  var yy = document.createElement("SELECT");
+    yy.setAttribute("id", "turt");
+    document.body.appendChild(yy);
+
+  var xx = document.createElement("SELECT");
+    xx.setAttribute("id", "tur");
+    document.body.appendChild(xx);
+
+function CreatOp (Name1,idt){
+	 this.zz = document.createElement("option");
+	 this.zz.id = idt;
+    this.zz.setAttribute("value", Name1);
+    this.tt = document.createTextNode(Name1);
+    this.zz.appendChild(this.tt);
+	document.getElementById("tur").appendChild(this.zz);
+	}
+	function CreatOp2 (Name1,valuet){
+	 this.zz = document.createElement("option");
+	 this.zz.value = valuet;
+    this.zz.setAttribute("value", Name1);
+    this.tt = document.createTextNode(Name1);
+    this.zz.appendChild(this.tt);
+	document.getElementById("turt").appendChild(this.zz);
+	}
+	var tx = new CreatOp2("","0");
+	var tx = new CreatOp2("Period 2","1");
+		var tt = new CreatOp2("Period 3","2");
+			var ts = new CreatOp2("Period 6","3");
+				var tn = new CreatOp2("Period 7","4");
+	var op = new CreatOp("","stu1");
+	var ot = new CreatOp("","stu2");
+	var ox = new CreatOp("","stu3");
+	var oz = new CreatOp("","stu4");
+	var oa = new CreatOp("","stu5");
+	var om = new CreatOp("","stu6");
+	var on = new CreatOp("","stu7");
+	var os = new CreatOp("","stu8");
+	var oq = new CreatOp("","stu9");
+	var ow = new CreatOp("","stu10");
+	var oe = new CreatOp("","stu11");
+	var or = new CreatOp("","stu12");
+	var oy = new CreatOp("","stu13");
+	var ou = new CreatOp("","stu14");
+	var oi = new CreatOp("","stu15");
+	var oo = new CreatOp("","stu16");
+	var od = new CreatOp("","stu17");
+	var og = new CreatOp("","stu18");
+	
+    
+	this.boook= document.createElement("button");
+	this.boook.id = "hskl";
+    this.boookt = document.createTextNode("Go");
+    this.boook.appendChild(this.boookt);
+document.body.appendChild(this.boook);
+document.getElementById(this.boook.id).onclick = go;
+    
+	 }
+</script>
+</body>
+</html>
